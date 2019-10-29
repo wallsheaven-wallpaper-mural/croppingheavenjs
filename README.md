@@ -83,8 +83,83 @@ JS:
               }
               
               
-CSS HTML
-<html>
+HTML
+
+	<html>
+
+	
+	<div style="position:fixed; left:0px; top:0px; width:10px; height:10px; background-color: yellow"></div>
+	<div id="box-crop" style="padding:10px;">
+
+			<div id="crop" style="width:100%; max-width:500px;">
+																															
+					<img src="https://as1.ftcdn.net/jpg/00/51/03/64/500_F_51036433_xmQ53OSQDalSiOhNPlgRkprd9xQ9pDQc.jpg" id="product" itemprop="image" class="noselect" />
+																					
+			</div>	
+			
+	</div>
+	
+
+<div>
+	<select  type="sizetype" class="b_r brd" id="sizetype">
+		<option>cm</option>
+		<option>inch</option>
+		<option>ft</option>
+	</select>
+
+	<sel class="customsize2">
+		<span>	
+			Width
+		</span>
+		<span>
+			<input  class="in-design" id="x"  type="number" step="0.1" name="x" value="222" size="3" min = "0.1" max="6666" style="width: 65px;" />
+											
+			<span class="maxsize">
+				max
+				<span id="max-w">22</span> cm		
+				
+			</span>											
+	
+		</span>
+	</sel>
+	<sel class="customsize2">
+		<span>	
+			Height
+		</span>
+		<span>
+			<input  class="in-design" id="y" type="text" step="0.1"  name="y" value="222" size="3"  min = "0.1"  style="width: 65px;" />
+											
+				<span  class="maxsize">
+					max
+					<span id="max-h">22</span> cm	
+					
+				</span>											
+		
+		</span>	
+	</sel>	
+	<input type="text" name="product[crop]" value=""  id="product-crop">
+
+	<sel class="customsize2">
+		<input type="checkbox" name="keep1to1" value="0" id="keep1to1" />
+		<label for="keep1to1">product.Keep the entire image</label>
+	</sel>
+</div>
+
+<hr>
+
+<div id="preview-box">
+
+
+</div>
+
+
+
+</html>
+
+------------------
+
+CSS
+
 <style>
 	#box-crop {
 		-webkit-user-drag: none;
@@ -192,98 +267,6 @@ CSS HTML
 	 }
 	</style>
 	
-
-	<div style="position:fixed; left:0px; top:0px; width:10px; height:10px; background-color: yellow"></div>
-	<div id="box-crop" style="padding:10px;">
-
-			<div id="crop" style="width:100%; max-width:500px;">
-																															
-					<img src="https://as1.ftcdn.net/jpg/00/51/03/64/500_F_51036433_xmQ53OSQDalSiOhNPlgRkprd9xQ9pDQc.jpg" id="product" itemprop="image" class="noselect" />
-																					
-			</div>	
-			
-	</div>
-	
-
-	<script>
-		
-		
-	</script>
-
-<div>
-	<select  type="sizetype" class="b_r brd" id="sizetype">
-		<option>cm</option>
-		<option>inch</option>
-		<option>ft</option>
-	</select>
-
-	<sel class="customsize2">
-		<span>	
-			Width
-		</span>
-		<span>
-			<input  class="in-design" id="x"  type="number" step="0.1" name="x" value="222" size="3" min = "0.1" max="6666" style="width: 65px;" />
-											
-			<span class="maxsize">
-				max
-				<span id="max-w">22</span> cm		
-				
-			</span>											
-	
-		</span>
-	</sel>
-	<sel class="customsize2">
-		<span>	
-			Height
-		</span>
-		<span>
-			<input  class="in-design" id="y" type="text" step="0.1"  name="y" value="222" size="3"  min = "0.1"  style="width: 65px;" />
-											
-				<span  class="maxsize">
-					max
-					<span id="max-h">22</span> cm	
-					
-				</span>											
-		
-		</span>	
-	</sel>	
-	<input type="text" name="product[crop]" value=""  id="product-crop">
-
-	<sel class="customsize2">
-		<input type="checkbox" name="keep1to1" value="0" id="keep1to1" />
-		<label for="keep1to1">product.Keep the entire image</label>
-	</sel>
-</div>
-
-<hr>
-
-<div id="preview-box">
-
-
-</div>
-
-
-
-
-
-	<div id="dimensions">
-		
-				
-				<div id="sizes">	
-					<form action="" method="post">						
-							
-
-
-							<select name="sizestype" id="sizes-type" class="in-design" style="display:none; text-align:left!important;">							
-								<option value="cm" selected="selected" class="textleft">cm</option>
-							</select>
-					
-					</form>
-				</div>	
-			
-	</div>
-</html>
-
 ------------------
 
 
